@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<!-- 
+<body text="white" bgcolor="black">
+ -->
+<body>
+	오늘의 날씨
+	<p>매우 맑음</p>
+	내일의 날씨
+<hr>
+	아<br>무<br>내<br>용<br>
+	이나<br>
+	작성하자
+<!-- 
+	아무내용이나 작성1<br>
+	<textarea></textarea>
+	아무내용
+ -->
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<header align="center" style="color: lightpink;">
+		<h1>B&nbsp;&nbsp;l&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;g</h1>
+	</header>
+	<hr>
+	<nav>
+		<ul style="list-style:none; display:flex">
+			<li>
+				<span>
+					전체&nbsp;&nbsp;&nbsp;
+					<a href="#test1"></a>
+				</span>
+			</li>
+			<li>
+				<span>
+					<a href="#test2">인테리어&nbsp;&nbsp;&nbsp;</a>
+				</span>
+				</li>
+			<li>
+				<a href="#test3">어학&nbsp;&nbsp;&nbsp;</a>
+			</li>
+		</ul>
+	</nav>
+	<hr>
+	
+</body>
+</html>

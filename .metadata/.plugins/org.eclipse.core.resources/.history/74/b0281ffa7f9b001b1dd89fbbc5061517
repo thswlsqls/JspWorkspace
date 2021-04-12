@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<header align="center" style="color: lightpink;">
+		<h1>B&nbsp;&nbsp;l&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;g</h1>
+	</header>
+	<hr>
+	<nav>
+		<ul style="list-style:none; display:none">
+			<li>
+				<a href="#test1">지식인</a>
+			</li>
+			<li>
+				<a href="#test2">카페</a>
+			</li>
+			<li>
+				<a href="#test3">뉴스</a>
+			</li>
+		</ul>
+	</nav>
+	<hr>
+	
+</body>
+</html>

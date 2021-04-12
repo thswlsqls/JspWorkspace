@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<table>
+			<tr>
+				<th>
+					<div>
+						다음 내용에 알맞게 입력하시오.<br>
+						전공 분야를 입력하세요.
+						<select size="1" name="">
+							<option value="1" selected>소프트웨어
+							<option value="2">전기전자
+							<option value="3">산업공학
+							<option value="4">전기화학
+						</select>
+					</div>
+				</th>
+				<th align="right">
+					<a href="file:///C:/JSP/kgWorkspace/html/quiz_company.html"><img src="test.png" width="100px" height="100px"></a>
+				</th>
+			</tr>
+		<div>
+			<table>
+				<tr align="left">
+					<th style="width:180">이름</th>
+					<th><input type="text" value=""></th>
+				</tr>
+				<tr align="left">
+					<th>아이디</th>
+					<th><input type="text" value=""></th>
+				</tr>
+				<tr align="left">
+					<th>비밀번호</th>
+					<th><input type="password" value=""></th>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<fieldset>
+				<legend>성별 조사</legend>
+				여성<input type="radio" name="gender" value="0">
+				남성<input type="radio" name="gender" value="1">
+			</fieldset>
+			<fieldset>
+				<legend>취미 조사</legend>
+				책읽기<input type="checkbox" name="hobby" value="0">
+				공부하기<input type="checkbox" name="hobby" value="1">
+				책 읽으며 공부하기<input type="checkbox" name="hobby" value="3">
+				컴퓨터<input type="checkbox" name="hobby" value="4">
+			</fieldset>
+		</div>
+	</div>
+
+
+</body>
+</html>
