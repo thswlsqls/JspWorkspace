@@ -1720,6 +1720,7 @@ java.lang.Error: SWT Resource was not properly disposed
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+<<<<<<< HEAD
 !SESSION 2021-04-14 15:44:01.610 -----------------------------------------------
 eclipse.buildId=4.19.0.I20210303-1800
 java.version=15.0.2
@@ -2387,3 +2388,5 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.core.resources.IResou
 	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:98)
 	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:419)
 	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+=======
+>>>>>>> a06c47fb0ecb2e46118e25eafce4ff773c481d43
