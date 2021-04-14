@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*
+	var num = "1111"
+	document.write(num === 1111)
+	document.write(num === "1111")
+*/
+</script>
+<script type="text/javascript">
+	var kor01 = 500
+	function getGrage(name){
+		const kor=100
+		document.write(kor+"<br>")
+		//kor=121200
+		document.write(kor+"<br>")
+		return name
+	}
+	kor01 = getGrage("안녕하세요")
+	document.write(kor01+"<br>")
+	function test(a, b, c, d){
+		//alert('test 호출')
+		document.write(a+" : "+b+" : "+c+" : "+d)
+		document.write(arguments.length)
+		for(i=0; i<arguments.length; i++){
+			document.write(arguments[i]+"<br>")
+		}
+		if(c == undefined){
+			//alert('c값없음')
+		}
+	}
+</script>
+</head>
+<body>
+	<button type="button" onclick="test('홍길동', 20, 1, 1, 1, 1)">클릭</button>
+</body>
+</html>
+
+
+
+
+

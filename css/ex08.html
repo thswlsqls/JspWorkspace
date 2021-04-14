@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style type="text/css">
+	.p1{
+		z-index: 1;
+		position: fixed; right:30px; top:10px; background-color: grey;
+		width: 400px; height: 50px;
+	}
+	.p2{
+		z-index: -1;
+		position: absolute; right:60px; top:20px; background-color: green;
+		width: 400px; height: 50px;
+	}
+	h1{ 
+		z-index: 0;
+		width: 400px; height: 50px; background-color: olive;
+	}
+
+</style>
+<body>
+	<h1>position style</h1>
+	<h1>position style</h1>
+	<h1>position style</h1>
+	<h1>position style</h1>
+	<h1>position style</h1>
+	<p class="p1">고정위치 -right 30px top -10px<br><a href="#">클릭</a></p>
+	<p class="p2">절대위치 -right 60px top 20px</p>
+</body>
+</html>

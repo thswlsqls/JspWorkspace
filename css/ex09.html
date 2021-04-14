@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	*{ margin:0; }
+	.wrap { width: 1000px; margin: auto; }
+	
+	header{ 
+		z-index: 111;
+		width: 100%; position: fixed; top: 0; padding-top: 30px;
+		/* background-image: url("test.png"); */
+		background-color: white;	
+	}
+	
+	nav{ background-color: olive; }
+	nav ul{ list-style: none; display: flex; padding: 10px; justify-content: flex-end; }
+	nav ul li{ padding: 10px; margin: 0 10px; }
+	nav a{ text-decoration: none; color: white; }
+	nav a:hover{ color: orange; padding-bottom: 3px; 
+		border-bottom: 1px solid orange; transition: all 0.25s; }
+	.title{
+		color: burlywood; font-family: Gabriola;
+		text-shadow: 10px 10px 15px black; font-size: 70px;
+		text-align: center; padding: 15px 0;
+	}
+	.content{ margin-top: 260px; }
+	label { width: 120px; display: inline-block; 
+		padding: 7px 0; vertical-align: top; }
+	input { border-radius: 5px; height: 25px; width: 50%; border: 1px solid gray; }
+	textarea { border-radius: 5px; height: 100px; width: 70%; border: 1px solid gray; }
+	button { margin-left: 130px; padding: 10px 20px; border-radius: 5px; 
+		background-color: #D5D5D5; color: #191919; }
+	button:active{
+		border-radius: 30px; background-color: #BcBcBc;
+		outline: none; color: #005766; box-shadow: 1px 1px 5px #ffE400;
+	}
+	hr{
+		margin:10px 5px;
+	}
+</style>
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<h1 class="title">CARE LAB</h1>
+		</div>
+		<nav>
+			<div class="wrap">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">BOARD</a></li>
+					<li><a href="#">MEMBERSHIP</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="wrap content">
+		<div style="border-radius: 30px; padding: 10px; border: 1px solid gray; width: 70%; margin: auto;">
+			<h1 style="text-align: center;">고객 게시판</h1>
+			<hr>
+			<form action="">
+				<label>이름</label><input type="text"><br>
+				<label>이메일</label><input type="text"><br>
+				<label>전화번호</label><input type="text"><br>
+				<label>내용</label><textarea></textarea><br>
+				<hr>
+				<button type="button">전송</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

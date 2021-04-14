@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div{
+		background-color: yellow;
+		width: 300px;
+		padding: 25px; /* border 안쪽으로 */
+		border: 15px solid navy; /*  */
+		margin: 25px; /* border 바깥쪽으로 */
+	}
+	.title{ /* 오른, 아래, 번짐, 색상 */
+		text-shadow: 10px 10px 15px black;
+		font-size: 70px;
+	}
+	img{ width:100px; height:100px; }
+	.shadow{ box-shadow: 5px 5px 5px burlywood; }
+	.a{ background-color: aqua; width:1000px; margin: auto; }
+	.b{ background-color: fuchsia; width:600px; float:left; border: 15px solid black;}
+	.c{ background-color: grey; width:400px; float:right; border: 11px solid black; }
+	/* { border: 1px solid: border-box; } */ 
+	.aa{ border: 1px solid black; width: 150px; }
+	.bb{ border: 1px solid black; width: 150px; }	
+</style>
+</head>
+<body>
+	<section class="aa">test</section>
+	<section class="bb">test</section>
+<hr>
+	<section class="a">
+		<article class="b">왼쪽 배치</article>
+		<article class="c">오른쪽 배치</article>
+	</section>
+<hr>
+	<img src="test.png" class="shadow">
+<hr>
+	<h1 class="title">내용이 들어갑니다.</h1>
+	
+	<p>padding, margin 확인하기</p>
+	<div>
+		padding, margin은 top, bottom, left, right를 이용하여 지정할 수 있으며,
+		하나만 줄 경우, 위, 오른, 아래, 왼쪽의 공간을 주며, 2개를 줬을 경우 위-아래, 왼-오른쪽
+	</div>
+
+</body>
+</html>

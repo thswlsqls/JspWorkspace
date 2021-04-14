@@ -6,11 +6,20 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="height"/>
+		<item key="selection" value="con"/>
 		<list key="findhistory">
+			<item value="con"/>
+			<item value="h4-section-content"/>
+			<item value="오늘의"/>
+			<item value="맛집"/>
+			<item value="ali"/>
+			<item value="align"/>
+			<item value="top"/>
+			<item value="al"/>
+			<item value="style"/>
+			<item value="width"/>
 			<item value="height"/>
 			<item value="hr"/>
-			<item value="style"/>
 		</list>
 		<list key="replacehistory">
 		</list>

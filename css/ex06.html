@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	*{ margin: 0; }
+	.wrap{ display: flex; flex-flow: column;
+	 	   width: 500px; background-color: aqua; 
+	 	   margin: 0 auto; text-align: center; 
+	 	   border: 1px solid black; }
+	.wrap .a{ order: 1; width: 33.3333%; background-color: orange; }
+	.wrap .b{ order: 2; width: 33.3333%; background-color: green; }
+	.wrap .c{ order: 3; display: flex; width: 33.3333%; background-color: olive; }
+
+	.h3{ order: 3; background-color: lime; width: 33.3333%; }
+	.h2{ order: 2; background-color: purple; width: 33.3333%; }
+	.h1{ order: 1; background-color: teal; width: 33.3333%; }
+
+</style>
+</head>
+<body>
+	<div class="wrap"> 
+		<div class="a"><h1>1</h1></div>
+		<div class="b"><h1>2</h1></div>
+		<div class="c">
+			<h1 class="h3">c3</h1>
+			<h1 class="h1">c1</h1>
+			<h1 class="h2">c2</h1>
+		</div>
+	</div>
+</body>
+</html>

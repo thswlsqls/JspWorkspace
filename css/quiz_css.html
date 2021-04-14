@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<title>Insert title here</title>
+</head>
+<style>
+	.root{
+		display: flex;
+	}
+	.subroot{
+		display: flex;
+		flex-direction: column;
+		width:100%;
+		align-items: center;
+	}
+	.subroot header{
+		width: 100%;
+		text-align: center;
+	}
+	.h1-header{
+		margin-top: 10px;
+	}
+	.subroot header i{
+	}
+	.shadow{
+		box-shadow: 5px 5px 5px black;
+		width: 100px;
+		height: 100px;
+		float: left;
+	}
+	.Container{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-between;
+	}
+	hr{
+		margin: 0px;
+		padding: 0px;
+		width:100%;
+	}
+	.navbar{
+		width: 100%;
+		margin-top: 50px;
+		margin-bottom: 10px;
+	}
+	.navbar-logo{
+		
+	}
+	.nav-link{
+		margin: 0px 15px;
+	}
+	section{
+		display: flex;
+		flex-direction: row;
+		width: 60%;
+	}
+	.div-section-img{
+		display: flex;
+		flex-direction: column;
+		margin-right: 30px;
+	}
+	aside{
+		margin-left: 10px;
+		width: 40%;
+	}
+	.h4-section-content{
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	.leftImg{
+		width: 150px;
+		height: 150px;
+		margin: 2px;
+	}
+	.leftImg0{
+		width: 150px;
+		height: 150px;
+		margin: 2px;
+	}
+	.div-section-content{
+		display: flex;
+		flex-direction: row;
+	}
+	.img-section-content{
+		width:75px;
+		height:75px;
+		margin: 2px;	
+	}
+	aside{
+		display: flex;
+		flex-direction: column;
+	}
+	.div-aside-inputs{
+		display: flex;
+		flex-direction: column;
+	}
+	.div-aside-inputs-btn{
+		display: flex;
+		flex-direction: row;
+	}
+	.btn-aside-inputs{
+		padding: 10px;
+	}
+	.div-aside-inputs-signUp{
+		display: flex;
+		flex-direction: column;
+	}
+	.a-aside-inputs-signUp{
+		text-decoration: underline;
+	}
+	.a-aside-inputs-searchIdPw{
+		text-decoration: underline;
+	}
+	.h4-aside-news{
+		margin-top: 50px;
+	}
+	.h6-aside-info{
+		margin-top:20px;
+	}
+</style>
+<body>
+	<div class="root">
+		<div class="subroot">
+			<header>
+				<img class="shadow" src="resources/images/맛집.png">
+				<h1 class="h1-header"><i>맛집탐방 이야기 ^^</i></h1>	
+			</header>
+			<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			  <!-- Brand/logo -->
+			  <a class="navbar-logo navbar-brand" href="#">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+			  
+			  <!-- Links -->
+			  <ul class="navbar-nav">
+			    <li class="nav-item">
+			      <a class="nav-link" href="#">HOME</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link" href="#">게시판</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link" href="#">내정보</a>
+			    </li>
+			  </ul>
+			</nav>
+			<div class="Container">
+				<section>
+					<div class="div-section-img">
+						<img class="leftImg" src="resources/images/l_정우성.jpg">
+						<img class="leftImg0" src="resources/images/16.gif">
+					</div>
+					<div>
+						<h4 class="h4-section-content"><&nbsp;오늘의맛집&nbsp;></h4>
+						<div class="div-section-content">
+							<h5>
+								오늘 방문한 곳은 맛있는 음식이 나오는 집
+							</h5>
+							<img class="img-section-content" src="resources/images/맛집01.jpg">
+						</div>
+						<div class="div-section-content">
+							<h5 class="h5-section-content">
+								오늘 방문한 곳은 맛있는 음식이 나오는 집
+							</h5>
+							<img class="img-section-content" src="resources/images/맛집02.jpg">
+						</div>
+						<div class="div-section-content">
+							<h5 class="h5-section-content">
+								오늘 방문한 곳은 맛있는 음식이 나오는 집
+							</h5>
+							<img class="img-section-content" src="resources/images/맛집03.jpg">
+						</div>
+					</div>
+				</section>
+				<aside>
+					<div>
+						<form>
+							<div class="div-aside-inputs-signUp">
+								<div class="div-aside-inputs-btn">
+									<div class="div-aside-inputs form-row">
+									    <div class="col">
+									      <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+									    </div>
+									    <div class="col">
+									      <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+									    </div>
+							  		</div>
+							  		<button type="submit" class="btn-aside-inputs">로그인</button>
+								</div>
+								<span><a class="a-aside-inputs-signUp">회원가입</a>&nbsp;/&nbsp;<a class="a-aside-inputs-searchIdPw">ID/PW찾기</a></span>
+							</div>
+						</form>					
+					</div>
+					<div>
+						<h4 class="h4-aside-news">오늘의 뉴스</h4>
+						<h6 class="h6-aside-info">
+							날씨: -32도<br>
+							미세먼지: 농도진함<br>
+							운세: 누구보다 좋음<br>
+						</h6>
+					</div>
+				</aside>
+			</div>
+			<hr style=" margin: 20px;">
+			<footer>
+				<b><i style="color:darkgreen">CARE LAB&nbsp;</i><i>Copyright&nbsp;&copy;&nbsp;AllRight Reserved</i></b>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#174;&nbsp;1999&nbsp;|&nbsp;회사소개&nbsp;|&nbsp;TEL&nbsp;:&nbsp;777-777</b>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

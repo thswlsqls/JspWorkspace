@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.a:link { color:blue; text-decoration: none; /* 밑줄 없앱 */ }
+	.a:visited { color:red; }
+	.a:hover { text-decoration: overline; color:olive; }
+	.a:active { background-color: lime; } 
+	.div { width:200px; height:100px; color:blue; 
+		background-color: green; opacity: 0.9; /* 농도 */}
+	.div:hover{width:400px; height:50px; color:red; 
+		background-color: yellow; opacity: 0.5;
+		transition: all 1.5s linear 0.5s; }
+	nav { background-color: black; }
+	nav ul { display: flex; list-style: none; }
+	nav ul li { margin: 0 3px; padding: 10px 10px; }
+	nav ul li a { text-decoration: none; color: white; }	
+	nav ul li a:hover { 
+		color: orange; padding-bottom: 3px; /*밑줄과 글씨 간격*/
+		border-bottom: 1px solid orange;
+		transition: all 0.25s;
+	 }
+</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">BOARD</a></li>
+			<li><a href="#">MEMBERSHIP</a></li>
+		</ul>
+	</nav>
+<hr>
+	<div class="div">가살 클래스 이용한 애니메이션 효과<br>마우스가 위에 있으면 박스가 늘어난다.</div>
+<hr>
+	link : 사용자가 방문하지 않았던 곳 표시<br>
+	visited : 방문한 곳<br>
+	hover : 마우스 올라갔을 때<br>
+	active : 클릭 되는 순간<br>
+	<a href="#">클릭</a><br>
+	<a href="#">클릭</a><br>
+	<a href="#">클릭</a><br>
+</body>
+</html>

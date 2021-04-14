@@ -1,0 +1,42 @@
+@charset "EUC-KR";
+
+.main {
+		overflow: hidden;
+		background-color: lightpink;
+	}
+	.sub {
+		margin: 10px;
+	}
+	div div ul {
+		list-style: none;
+		padding-left: 0px;
+	}
+	div div ul li {
+		background-color: orangered;
+		margin: 0px;
+		padding: 20px 10px;
+		width: 30%;
+		text-align: center;
+	}
+	div div ul li a{
+		color: white;
+		text-decoration: none;
+	}
+	div div ul li:hover {
+		background-color: #555555;
+		margin: 0px;
+		padding: 20px 10px;
+		width: 30%;
+		text-align: center;
+		transition:all 0.5s;
+	}
+	div div ul li a:hover{
+		color: white;
+		text-decoration: none;
+		padding-bottom: 3px;
+		border-bottom: 1px solid white;
+		transition:all 0.5s;
+	}
+	.classA{
+		color: lime; font-family: cursive;
+	}
