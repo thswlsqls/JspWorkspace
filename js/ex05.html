@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p id="d1"></p>
+	<p id="d2"></p>
+	<p id="d3"></p>
+	<div id="digClock01"></div>
+	<button onclick="test()">클릭</button>
+	<button onclick="digClock()">시작</button>
+	<button onclick="digStop()">종료</button>
+	<hr>
+	<p id="demo"></p>
+	<button onclick="mySetInterval()">시작</button>
+	<button onclick="myStop()">종료</button>
+	<script>
+		var myVar
+		function mySetInterval(){
+			myVar = setInterval(myTimer, 1000)
+		}
+		function myTimer(){
+			var d = new Date()
+			document.getElementById("demo").innerHTML = d.toLocaleTimeString()
+		}
+		function myStop(){
+			clearInterval(myVal)
+		}
+	
+		var e;
+		var cnt = 1;
+		function digClock(){
+			var today = new Date()
+			nowTime = today.getFullYear()+"년"+
+					  (today.getMonth()+1)+"월"+
+					  today.getDate()+"일"+
+					  today.getHours()+"시"+
+					  today.getMinutes()+"분"+
+					  today.getSeconds()+"초"
+					  document.getElementById("digClock01").innerHTML = nowTime
+					  e = setTimeout('digClock()', 1000)
+		}
+		function test(){
+			console.log("클릭 클릭!!!"+cnt++)	
+		}
+		function digStop(){
+			clearTimeout(e)
+		}
+		/*
+		var today = new Date()
+		document.getElementById("d1").innerHTML = today.getFullYear()
+		document.getElementById("d2").innerHTML = today.getMonth()+1+"월 "+today.getDate()+"일"
+		document.getElementById("d3").innerHTML = today.getHours()+"시 "+today.getMinutes()+"분 "+today.getSeconds()+"초"
+		*/
+	</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+	.remoteControllerContainer{
+		border: 3px solid black;
+	}
+	.mainContainer{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.contentContainer{
+		margin-right: 50px; 
+	}
+	.remoteControllerContainer{
+		width: 100px;
+		height: 60px;
+	}
+	h6{
+		top:0;
+		width: 100%;
+		height: 25%;
+		text-align: center;
+		margin: 0px;
+		background-color: darkkhaki
+	}
+	.addSub{
+		height: 80%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+	img{
+		width: 20px;
+		height: 20px;
+	}
+	h5{
+		margin:0px;
+		width: 30%;
+		text-align: center;
+		background-color: yellow;
+	}
+</style>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery-1.12.1-ui.js"></script>
+<script>
+	var n = 0;
+	$(function(){
+		$("#add").click(function(){ $("#cnt").text(++n) })
+		$("#sub").click(function(){ $("#cnt").text(--n) })
+	})
+	$(function(){
+		$("#RC").draggable()
+	})
+</script>
+<body>
+	<div class="mainContainer">
+		
+		<div class="contentContainer">	
+			<h1>오늘의 소설</h1>
+		  	<h3>오늘도 덥다</h3>
+			<h3>내일도 덥다</h3>
+			<h3>모래는 바다</h3>
+		</div>
+		<div id="RC" class="remoteControllerContainer">
+			<h6>리 모 콘</h6>
+			<div class="addSub">
+				<img id="add" src="resources/images/add.png">
+				<h5 id="cnt">0</h5>
+				<img id="sub" src="resources/images/sub.jpg">
+			</div>
+		</div>
+		
+	</div>
+</body>
+
+</html>

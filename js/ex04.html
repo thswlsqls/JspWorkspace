@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var city=['seoul', 'busan', 'incheon']
+		city[3] = 45678;
+		var join01 = city.join()
+		var join02 = city.join('그리고')
+		document.write(city+"<br>")
+		document.write(join01+"<br>")
+		document.write('join : '+join02+"<br>")
+		document.write('concat : '+city.concat('이어써줄', '내용')+"<br>")
+		
+		document.write("<h3>push, pop</h3>")
+		var push01 = city.push('데이터') //길이를 리턴함
+		document.write("city : "+city+"<br>")
+		document.write("데이터 push : "+push01+"<br>")
+		
+		var pop01 = city.pop() //요소값을 리턴함
+		document.write("city : "+city+"<br>")
+		document.write("pop : "+pop01+"<br>")
+		
+		document.write("<h3>unshift, shift</h3>")
+		city.unshift('추가', '데이터')
+		document.write("city unshift : "+city+"<br>")
+		city.shift()
+		document.write("city shift : "+city+"<br>")
+		
+		function printArr(item, index){
+			document.write("foreach => "+index+" : "+ item + "<br>")
+		}
+		city.forEach(printArr);
+		
+		function print(){
+			for(i=0; i<city.length; i++){
+				document.write(city[i]+"<br>")
+			}
+		}
+		//print()
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script>
+function init(){
+	var t1 = document.getElementById("target1")
+	var t2 = document.getElementById("target2")
+	var t3 = document.getElementById("target3")
+	
+	t1.addEventListener('click', btn_lister)
+	t2.addEventListener('click', btn_lister)
+	t3.addEventListener('click', btn_lister)
+
+	window.open("quiz_lightBox.html", "", "width=500, height=300") //자기자신
+}
+function btn_lister(){
+	console.log(event.target)
+	switch( event.target.id ){
+		case 'target1': { 
+			var display = document.getElementById("display")
+			display.setAttribute('class', 'b')
+			var h2 = document.getElementById("h2")
+			h2.innerHTML = "버튼 1 클릭"
+			break;
+			}
+		case 'target2': { 
+			var display = document.getElementById("display")
+			display.setAttribute('class', 'b')
+			var h2 = document.getElementById("h2")
+			h2.innerHTML = "버튼 2 클릭"
+			break;
+		}
+		case 'target3': { 
+			var display = document.getElementById("display")
+			display.setAttribute('class', 'b')
+			var h2 = document.getElementById("h2")
+			h2.innerHTML = "버튼 3 클릭"
+			break;
+		}
+	}
+	remove = document.getElementById("remove")
+	remove.setAttribute('class','a')
+}
+function blockRM() {
+	let display = document.getElementById("display")
+	display.removeAttribute('class')
+}
+
+</script>
+<style>
+	#remove { display: none; }
+	#remove.a { display: inline; }
+	#display { display: none; }
+	#display.b { 
+				 padding:20px;
+				 display: flex;
+				 justify-content: center;
+				 align-items: center; 
+			  }
+	#h2{
+		padding: 20px;
+		text-align: center;
+		background-color: yellow;  
+		width: 200px;
+		height: 200px;
+	}
+</style>
+<body onload="init()">
+	
+	<input type="button" id="target1" value="btn1">
+	<input type="button" id="target2" value="btn2">
+	<input type="button" id="target3" value="btn3">
+	<input type="button" id="auto" value="자동">
+	<input onclick="blockRM()" type="button" id="remove" value="지우기">
+	
+	<div id="display">
+		<h2 id="h2">선택</h2>
+	</div>
+	
+</body>
+</html>

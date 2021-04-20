@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	function init(){
+		//alert('onload 실행')
+		var t1 = document.getElementById("target1")
+		var t2 = document.getElementById("target2")
+		t1.addEventListener('click', btn_lister)
+		t2.addEventListener('click', btn_lister)
+	}
+	function btn_lister(){
+		console.log(event.target)
+		switch( event.target.id ){
+			case 'target1': //alert('1선택'); break;
+			case 'target2': //alert('2선택'); break;
+		}
+		let remove = document.getElementById("remove")
+		remove.setAttribute('class','a')
+	}
+	function blockRM(){
+		let remove = document.getElementById("remove")
+		remove.removeAttribute('class')
+	}
+</script>
+<style type="text/css">
+	#remove { display: none; }
+	#remove.a { display: block; background-color: green; }
+</style>
+</head>
+<body onload="init()">
+	
+	<div id="remove">
+		<h3>안녕하세요</h3>
+		<input type="button" value="되돌리기" onclick="blockRM()">
+	</div>
+	
+	<input type="button" id="target1" value="btn1">
+	<input type="button" id="target2" value="btn2">
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

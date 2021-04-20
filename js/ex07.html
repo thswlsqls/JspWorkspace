@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var img;
+	function add(){
+		img = document.createElement("img")
+		img.src = 'test.png'
+		img.width = 100
+		//img.height=100
+		img.setAttribute('height',300)
+		//document.body.append(img)
+		document.getElementById("test").appendChild(img)
+	}
+	function rm(){
+		document.getElementById("test").removeChild(img)
+		//document.body.removeChild(img)
+	}
+	function insertOpt(){
+		var ins = ['1','2','3','4']
+		var insert = document.getElementById("insert")
+		for(i=0;i<ins.length;i++){
+			var opt = document.createElement("option")
+			//opt.value = ins[i]
+			opt.innerHTML = ins[i]
+			insert.appendChild(opt)
+		}
+	}
+	function div(){
+		div = document.getElementById("div")
+		div.innerHTML=""
+	}
+</script>
+</head>
+<body onload="insertOpt()">
+	<div id="div">
+		<h1>안녕하세요</h1>
+		<h1>안녕하세요</h1>
+		<h1>안녕하세요</h1>
+	</div>
+	<button onclick="div()">삭제</button>
+<hr>
+	<select id="insert"></select>
+<hr>
+	<p id="test">test</p>
+	<a href="#" onclick="add()">이미지 추가</a>
+	<a href="#" onclick="rm()">이미지 삭제</a>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+	$(function(){
+		$("button.b1").click(function(){
+			$("img").animate({width:'100px'})
+		})
+		$("button.b2").click(function(){
+			$("img").animate({width:'200px'})
+		})
+		$("button.b3").click(function(){
+			$("img").animate({width:'300px'})
+		})
+	})
+</script>
+<style type="text/css">
+	.css_pic{ height: 430px; text-align: center; }
+	.css_pic img { width: 250px; }
+</style>
+</head>
+<body>
+	<div class="css_pic">
+		<button class="b1">가로100픽셀</button>
+		<button class="b2">가로200픽셀</button>
+		<button class="b3">가로300픽셀</button>
+		<hr>
+		<img name="pic1" src="resources/images/car01.png">
+	</div>
+
+</body>
+</html>

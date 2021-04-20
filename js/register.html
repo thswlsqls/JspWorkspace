@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script>
+
+	function check() {
+		if(idCheck()&&pwCheck()&&pwConfirmCheck()){
+			if(pw.value !== pwConfirm.value){
+				alert("비밀번호가 불일치합니다.")
+				pwConfirm.value = ""
+				pwConfirm.focus()
+			}else{
+				location.href="success.html"
+			}
+		}
+	}
+		
+	function idCheck(){
+		var id = document.getElementById("id")
+		if(id.value == ""){
+			alert("아이디는 필수 사항입니다.")
+			id.focus()
+			return false;
+		}
+		return true;
+	}
+	
+	function pwCheck(){
+		var pw = document.getElementById("pw")
+		if(pw.value == ""){
+			alert("비밀번호는 필수 사항입니다.")
+			pw.focus()
+			return false;
+		}
+		return true;
+	}
+	
+	function pwConfirmCheck(){
+		var pwConfirm = document.getElementById("pwConfirm")
+		if(pwConfirm.value == ""){
+			alert("비밀번호 확인은 필수 사항입니다.")
+			pwConfirm.focus()
+			return false;
+		}
+		return true;
+	}
+	
+	function chk() {
+		var id_ = document.getElementById('id_')
+		var pwd_ = document.getElementById('pwd_')
+		if(id_.value == ""){
+			alert("아이디는 필수 항목 입니다.")
+			id_.focus()
+		}else if(pwd.value == ""){
+			alert('비밀번호는 필수 항목 입니다.')
+			pwd_.focus()
+		}else{
+			fo.submit()
+		}
+	}
+	
+	function passwordChk(){
+		var pwd_ = document.getElementById('pwd_')
+		var pwdChk_ = document.getElementById('pwdCheck_')
+		var labelChk = document.getElementById('labelChk')
+		if(pwd.value == pwdChk.value){
+			labelChk.innerHTML = "확인!!!"
+		}else{
+			pwd_.value = ""
+			pwdChk_.value = ""
+			pwd_.focus()
+			labelChk.innerHTML = "불일치!!"
+		}
+	}
+	
+</script>
+<body>
+	<input id="id" type="text" placeholder="아이디"><label>(*필수항목)</label><br>
+	<input id="pw" type="text" placeholder="비밀번호"><label>(*필수항목)</label><br>
+	<input id="pwConfirm" type="text" placeholder="비밀번호확인"><label id="lavelChk"></label><br>
+	<input id="name" type="text" placeholder="이름"><br>
+	<hr>
+	<button type="button" onclick="check()">등록</button>
+
+	<form id="fo" action="success.html">
+		<input type="text" id="id_" placeholder="input id">
+		<input type="text" id="pwd_" placeholder="input password">
+		<input type="text" id='pwdChk_" onchange="passwordChk()" placeholder="password check">
+		<input type="text" placeholder="input name">
+		<input type="button" onclick="chk()" value="가입">
+	</form>
+</body>
+</html>

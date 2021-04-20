@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function myFocus(){
+		//document.getElementById('pw').focus()
+		pw01 = document.getElementById('pw01')
+		pw = document.getElementById('pw')
+		if(pw01.value == pw.value){
+			alert('비밀번호 일치')
+		}else{
+			alert('비밀번호가 틀렸습니다.')
+			pw.value=""
+			pw.focus()
+		}
+	}
+	function go(){
+		window.history.forward()
+	}
+</script>
+</head>
+<body>
+	<input type="text" id="pw01"><br>
+	<input type="text" id="pw" onchange="myFocus()"><br>
+	<input type="text"><br>
+	<input type="button" value="click" onclick="myFocus()">
+	<button type="button" onclick="go()">앞으로</button>
+</body>
+</html>
+

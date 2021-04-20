@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function test(){
+		alert("환영합니다!!!")
+		var result = confirm("처음 방문입니까?")
+		if(result == true){
+			document.getElementById("t").innerHTML="환영합니다."
+		}else{
+			document.getElementById("t").innerHTML="다시 찾아주셔서 감사합니다."
+		}
+	}
+	function win(){
+		//window.open("https://www.naver.com") //새창
+		//window.open("https://www.naver.com", "_self") //자기자신
+		//window.open("https://www.naver.com", "", "width=500, height=100") //자기자신
+		window.open("popup.html", "", "width=500, height=100") //자기자신
+	}
+</script>
+</head>
+<body>
+	<button onclick="win()">wind클릭</button>
+<hr>
+	<p id="t"></p>
+	<button onclick="test()">클릭</button>
+<hr>
+	<input type="button" onclick="history.back()" value="이전">
+</body>
+</html>

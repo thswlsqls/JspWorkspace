@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+	img {
+		width: 50px;
+		height: 40px;
+	}
+</style>
+<script>
+	var flag = true
+	function turnOff(){
+		var op
+		//var path
+		flag = !flag
+		if(flag == true){
+			op = 0
+			//path = "resources/images/switch_on.png"
+		}else{
+			op = 0.7
+			//path = "resources/images/switch_off.png"
+		}
+		document.getElementById('dark').style.opacity = op
+		//document.getElementById('sw').src = path
+	}
+	
+</script>
+<body>
+	<h2>light box</h2>
+	<div>
+		<div>
+			<div class="dark01"></div>
+			<img src="resources/images/car01.png" id="sw" onclick="turnOff()">
+		</div>
+		<div>
+			<div class="dark02"></div>
+			<img src="resources/images/car02.png" id="sw" onclick="turnOff()">
+		</div>
+		<div>
+			<div class="dark03"></div>
+			<img src="resources/images/car03.png" id="sw" onclick="turnOff()">
+		</div>
+	</div>
+</body>
+</html>

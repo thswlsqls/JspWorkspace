@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#panel").click(function(){ $("#panel").slideUp("fast") })
+		$("#slide").click(function(){ $("#panel").slideDown(5000) })
+		$("#flip").click(function(){ $("#panel").slideToggle("slow") })
+		$("#stop").click(function(){ $("#panel").stop() })
+		
+		$("#s").mouseenter(function(){ $("#first").slideToggle("slow") })
+		//$("#s").click(function(){ $("#first").slideToggle("slow") })
+	})
+</script>
+<style type="text/css">
+	#slide, #panel, #flip{
+		padding: 5px; text-align: center;
+		background-color: lime; 
+		border: 1px solid gray;
+	}
+	#panel { padding: 70px; display: none; 
+			 background-color: olive; }
+	
+	#s{
+		padding: 5px; text-align: center;
+		background-color: teal; 
+		border: 1px solid gray;
+	}
+	#first { display: none; 
+			 background-color: olive; }
+</style>
+
+</head>
+<body>
+	<div id="s">[오늘의 공지사항]</div>
+	<div id="first">첫번째 영역</div>
+<hr>
+	<div id="slide">[오늘의 공지사항]</div>
+	<div id="panel">
+		<div style="display: flex;">
+			<div style="width: 100px; background-color: orange;">
+				<a href="">1</a><br><a href="">1</a><br><a href="">1</a><br><a href="">1</a><br>
+			</div>
+			<div style="width: 100px; background-color: purple; ">
+				<a href="">1</a><br><a href="">1</a><br><a href="">1</a><br><a href="">1</a><br>
+			</div>
+		</div>
+	</div>
+	<div id="flip">토글슬라이드</div>
+	<button id="stop">멈춤</button>
+</body>
+</html>
+
+

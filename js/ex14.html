@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	var n = 0
+	$(function(){
+		$("div.out").mouseenter(function(){
+			$(".msg").text("마우스 포인트 들어옴")
+			$("#cnt").text(++n)
+			
+			$("#cnt").addClass("red")
+		})
+		$("div.out").mouseleave(function(){
+			$(".msg").text("마우스 포인트 나감")
+			$("#cnt").text("최종 횟수 : "+n)
+			
+			$("#cnt").removeClass("red")
+		})
+		
+		$("div.out").mousedown(function(){
+			$(".msg").hide()
+			$("#cnt").text("마우스 다운")
+		})
+		$("div.out").mouseup(function(){
+			$(".msg").show()
+			$("#cnt").text("마우스 업")
+		})
+		
+	})
+</script>
+<style>
+	div.out{ width:200px; height:100px; border: 1px solid black; 
+			 text-align: center; background-color: yellow; }
+	.red{ background-color: red; }
+</style>
+</head>
+<body>
+	<div class="out">
+		<p class="msg">마우스 이벤트 알아보기</p>
+		<p id="cnt">0</p>
+	</div>
+</body>
+</html>
+
+
+
