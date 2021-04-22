@@ -33,7 +33,6 @@
 <hr>
         <% int test = 4567; %>
         <%= test %>
-
 <hr>
     <%                                 
         int total = 0;
