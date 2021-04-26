@@ -9,11 +9,10 @@
 <body>loginForm.jsp<br>
 
 	<form action="chkLogin.jsp" method="post">
-		<input type="text" name="id" placeholder="input id"><br>
-		<input type="text" name="pwd" placeholder="input password"><br>
+		<input type="text" name="id" placeholder="아이디"><br>
+		<input type="password" name="pwd" placeholder="패스워드"><br>
 		<input type="submit" value="Login"><br>
 	</form>
-	
 	
 </body>
 </html>
