@@ -19,7 +19,7 @@
 		
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-		String id="system", pwd="1234";
+		String id="java1", pwd="1234";
 		Connection con = DriverManager.getConnection(url,id,pwd);
 		
 		String sql = "select * from members where id = '"+userId+"'";
